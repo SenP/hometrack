@@ -34,6 +34,6 @@ function processRequest(req) {
      return { response }
 }
 
-let server = app.listen(process.env.PORT || 3000, process.env.IP || "localhost", function(){
+let server = app.listen(process.env.PORT || 3000, function(){
    console.log("server started listening at port: " + server.address().port);
 });
